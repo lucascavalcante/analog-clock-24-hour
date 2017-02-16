@@ -1,0 +1,57 @@
+* {
+	margin: 0;
+	padding: 0;
+}
+
+html { 
+    background: url(../img/bg.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+#container {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-top: -300px;
+    margin-left: -300px;
+    text-align: center;
+}
+
+#clock {
+	position: relative;
+	width: 600px;
+	height: 600px;
+	background: url(../img/clockface.png);
+	list-style: none;
+	}
+
+#seconds, #minutes, #hours {
+	position: absolute;
+	width: 30px;
+	height: 600px;
+	top: 0px;
+	left: 285px;
+	}
+
+#seconds {
+	background: url(../img/sechand.png);
+	z-index: 3;
+   	}
+   
+#minutes {
+	background: url(../img/minhand.png);
+	z-index: 2;
+   	}
+   
+#hours {
+	background: url(../img/hourhand.png);
+	z-index: 1;
+   	}
+   	
+p {
+    text-align: center; 
+    padding: 10px 0 0 0;
+}
